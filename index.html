@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport Seva</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+     
+    .logo{
+        color: white;
+     }
+    
+    .btn-success{
+        background-color: #2f97d3;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 10px;
+    }
+    .btn-success:hover {
+        background-color: #55c1ff;
+    }
+    .btn-success:active {
+        background-color: #87ceeb;
+    }
+
+
+</style>
+</head>
+<body>
+    <!-- Header -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary sticky-top">
+		<div class="container">
+			<a class="navbar-brand d-flex align-items-center" href="#">
+				<img src="logo.png" alt="Logo" style="height: 32px;" class="mr-2">
+				<span>Passport Seva</span>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="mainNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Services
+						</a>
+						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="servicesDropdown">
+							<a class="dropdown-item" href="registration.html"><i class="fas fa-user-plus mr-2"></i>New User Registration</a>
+							<a class="dropdown-item" href="login.html"><i class="fas fa-sign-in-alt mr-2"></i>Existing User Login</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="login.html"><i class="fas fa-passport mr-2"></i>Apply for Fresh Passport</a>
+							<a class="dropdown-item" href="login.html"><i class="fas fa-sync mr-2"></i>Re-issue of Passport</a>
+							<a class="dropdown-item" href="login.html"><i class="fas fa-edit mr-2"></i>Change in Existing Passport</a>
+							<a class="dropdown-item" href="login.html"><i class="fas fa-exchange-alt mr-2"></i>Replacement of Damaged Passport</a>
+							<a class="dropdown-item" href="login.html"><i class="fas fa-search mr-2"></i>Check Application Status</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about-us">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact-us">Contact Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link btn btn-outline-success btn-sm ml-2" href="login_admin.php" style="padding: 8px 16px;">
+							<i class="fas fa-user-shield mr-1"></i>Admin
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Main Content -->
+     <section class="home">
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3 bg-light p-3">
+                <ul class="nav flex-column">
+               
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" onclick="window.location.href='login.html'"><i class="fas fa-passport" style="margin-right: 10px; color: #f1c40f;"></i> Apply for Fresh Passport</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" onclick="window.location.href='login.html'"><i class="fas fa-sync" style="margin-right: 10px; color: #2ecc71;"></i> Re-issue of Passport</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" onclick="window.location.href='login.html'"><i class="fas fa-edit" style="margin-right: 10px; color: #db34b1;"></i> Change in Existing Passport</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" onclick="window.location.href='login.html'"><i class="fas fa-exchange-alt" style="margin-right: 10px; color: #9b59b6;"></i> Replacement of Damaged Passport</button>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-success" onclick="window.location.href='login.html'"><i class="fas fa-search" style="margin-right: 10px; color: #e74c3c;"></i> Check Application Status</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Main Area -->
+            <div class="col-md-9">
+                <!-- Hero Section -->
+                <div class="hero text-center py-5">
+                    <div class="container">
+                        <h1>Welcome to Passport Seva</h1>
+                        <p>Online Passport Application Service</p>
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="registration.html" class="btn btn-primary">
+                                <i class="fas fa-user-plus"></i> New User Registration
+                            </a>
+                            <a href="login.html" class="btn btn-secondary">
+                                <i class="fas fa-sign-in-alt"></i> Existing User Login
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Cards -->
+                <div class="container my-5">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-file-alt"></i> Apply Online</h5>
+                                    <p class="card-text">Fill and submit your application form online.</p>
+                                    <a href="login.html" class="btn btn-primary">Go to Apply</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-search"></i> Track Application</h5>
+                                    <p class="card-text">Check the status of your passport application.</p>
+                                    <a href="login.html" class="btn btn-primary">Track Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title"><i class="fas fa-calculator"></i> Fee Calculator</h5>
+                                    <p class="card-text">Calculate the fee for your passport services.</p>
+                                    <a href="login.html" class="btn btn-primary">Calculate Fee</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about-us" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="passport photo.png" alt="About Us" class="img-fluid about-img">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form action="contact.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" name="sb" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h4>Contact Information</h4>
+                <p><i class="fas fa-envelope contact-icon"></i> contact@example.com</p>
+                <p><i class="fas fa-phone contact-icon"></i> +1 234 567 890</p>
+                <p><i class="fas fa-map-marker-alt contact-icon"></i> 123 Street, City, Country</p>
+                <!-- Optional map placeholder -->
+                <div id="map" style="height: 200px; background: #ccc; margin-top: 1rem;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Section -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <p><i class="fas fa-envelope"></i> info@example.com</p>
+                    <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                </div>
+                <!-- Social Media Section -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <!-- Newsletter Section -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-title">Newsletter</h5>
+                    <form>
+                        <input type="email" class="form-control mb-2" placeholder="Your email">
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-center mt-4">
+                <p>&copy; 2023 Your Company. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

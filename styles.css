@@ -1,0 +1,230 @@
+/* Custom styles */
+.bg-primary {
+    background-color: #003366 !important; /* Dark blue for header */
+}
+
+.btn-primary {
+    background-color: #ff6600; /* Orange for buttons */
+    border-color: #ff6600;
+}
+
+.btn-primary:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+    border-color: #cc5200;
+}
+
+.hero {
+    background: linear-gradient(to right, #003366, #006699); /* Gradient for hero */
+    color: white;
+}
+
+.home{
+    height: 100%;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.nav-link {
+    color: #003366; /* Dark blue for sidebar links */
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #ff6600; /* Orange on hover */
+}
+
+.btn {
+    transition: all 0.3s ease; /* Smooth transition for buttons */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* Clean typography */
+}
+/* Gradient background for the header */
+.bg-gradient-primary {
+    background: linear-gradient(to right, #003366, #006699);
+}
+
+/* Sticky header styling */
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Keeps header above other content */
+}
+
+/* Padding for the header */
+.p-3 {
+    padding: 1rem;
+}
+
+/* Flexbox container styling */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+/* Text color */
+.text-white {
+    color: #fff;
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin-left: 1.5rem; /* Space between links */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: #ff6600; /* Orange on hover */
+}
+
+.nav-link1 {
+    color: #79248a; /* White text */
+    text-decoration: none; /* Remove underline */
+    margin-left: 1.5rem; /* Space between links */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+/* Hover effect for navigation links */
+.nav-link1:hover {
+    color: #ff6600; /* Orange on hover */
+}
+
+/* Title styling */
+.title {
+    font-size: 1.5rem; /* Larger text */
+    font-weight: bold; /* Bold for emphasis */
+}
+
+/* About Us and Contact Us Sections */
+#about-us, #contact-us {
+    padding: 3rem 0;
+}
+
+#about-us h2, #contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #003366; /* Dark blue */
+}
+
+#about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Hover effect for About Us image */
+.about-img {
+    transition: transform 0.3s ease;
+}
+
+.about-img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Contact Us form styling */
+#contact-us .form-control {
+    border-radius: 0;
+    background-color: #f8f9fa;
+}
+
+#contact-us .btn-primary {
+    background-color: #ff6600; /* Orange */
+    border-color: #ff6600;
+    transition: background-color 0.3s ease;
+}
+
+#contact-us .btn-primary:hover {
+    background-color: #cc5200; /* Darker orange */
+    border-color: #cc5200;
+}
+
+/* Contact information styling */
+#contact-us h4 {
+    margin-bottom: 1.5rem;
+    color: #003366;
+}
+
+#contact-us p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Hover effect for contact icons */
+.contact-icon {
+    color: #003366;
+    margin-right: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+#contact-us p:hover .contact-icon {
+    color: #ff6600; /* Orange on hover */
+}
+
+/* Footer styling */
+.footer {
+    background-color: blueviolet; /* Dark background */
+    color: #ccc; /* Light text */
+    padding: 3rem 0; /* Vertical padding */
+}
+
+/* Section titles */
+.footer-title {
+    color: #fff; /* White for emphasis */
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+/* Social media icons */
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease; /* Smooth hover transition */
+}
+
+.social-icons a:hover {
+    color: #ff6600; /* Orange on hover */
+    transform: scale(1.2); /* Slight enlargement */
+}
+
+/* Footer bottom (copyright) */
+.footer-bottom {
+    border-top: 1px solid #ffffff;
+    padding-top: 1rem;
+    color: #888;
+}
+
+/* Newsletter form styling */
+.form-control {
+    background-color: #111010;
+    border: none;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #cc5200; /* Darker orange on hover */
+}

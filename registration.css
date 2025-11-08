@@ -1,0 +1,159 @@
+/* Set a neutral background and font for the entire page */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the container to center the form with a modern card-like appearance */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+/* Center and style the heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style labels for clarity */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style text, tel, email, and password inputs consistently */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Add focus effect to inputs for better interactivity */
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Arrange first and last name inputs side by side */
+.name-group {
+    display: flex;
+    gap: 20px;
+}
+
+.name-group .form-group {
+    flex: 1;
+}
+
+/* Display gender radio buttons horizontally with spacing */
+.gender-options div {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hide the default checkbox for "not a robot" */
+#notRobot {
+    display: none;
+}
+
+/* Style the "not a robot" label to align checkbox and text */
+.not-robot-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox appearance */
+.checkbox-wrapper {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+/* Style the custom checkbox when checked */
+#notRobot:checked + .not-robot-label .checkbox-wrapper {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Add a checkmark using a pseudo-element */
+.checkbox-wrapper::after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+}
+
+/* Show the checkmark when checkbox is checked */
+#notRobot:checked + .not-robot-label .checkbox-wrapper::after {
+    display: block;
+}
+
+/* Position and style the verification status text */
+.verification-status {
+    margin-left: 10px;
+}
+
+/* Change verification status color based on checkbox state */
+#notRobot:checked ~ #verificationStatus {
+    color: green;
+}
+
+#notRobot:not(:checked) ~ #verificationStatus {
+    color: red;
+}
+
+/* Style the submit button with a modern look */
+.register-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+/* Add hover effect to the submit button */
+.register-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Style the disabled state of the submit button */
+.register-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Style small text (hints) under inputs */
+small {
+    font-size: 12px;
+    color: #666;
+    display: block;
+    margin-top: 5px;
+}
